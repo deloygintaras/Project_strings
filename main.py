@@ -65,11 +65,9 @@ import string
 # starWars = "Star Wars: Episode " + (" " * random.randint(1, 9)) + str(random.randint(1, 7)) + "
 # - A New Hope" Surasti ir atspausdinti epizodo numerį.	su
 
-
-# starWars = "Star Wars: Episode " + (" " * random.randint(1, 9)) + str(random.randint(1, 7)) + " - A New Hope"
-# print(starWars)
-# epizodonr = starWars.split()[3]
-# print("Episode number", epizodonr)
+starWars = "Star Wars: Episode " + (" " * random.randint(1, 9)) + str(random.randint(1, 7)) + "- A New Hope"
+print(starWars)
+print(re.sub(r"\D+", "", starWars))
 
 # starWars = "Star Wars: Episode " + (" " * random.randint(1, 9)) + str(random.randint(1, 7)) + " - A New Hope"
 # print(starWars)
